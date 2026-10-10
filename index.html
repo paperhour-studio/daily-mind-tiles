@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily Mind Tiles</title>
+  <meta name="description" content="Daily Mind Tiles is a quiet 4×4 number puzzle for Android. One daily board, offline play, and an optional rewarded hint.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <a class="word" href="./">Daily Mind Tiles</a>
+    <nav>
+      <a href="#play">How to play</a>
+      <a href="#daily">Daily</a>
+      <a href="privacy/">Privacy</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <h1>One board for today.</h1>
+        <p class="lead">Swipe the grid. Matching numbers join into the next one. Clear 2048 and the day counts toward your streak.</p>
+        <p>The same date makes the same puzzle on every device. Practice is there when you want another round. The game runs without a connection, and nothing you play is sent to an account.</p>
+      </div>
+      <div class="board" role="img" aria-label="A 4 by 4 board with a 2 in the third cell of the first row and a 2 in the second cell of the last row.">
+        <span></span><span></span><b>2</b><span></span>
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+        <span></span><b>2</b><span></span><span></span>
+      </div>
+    </section>
+
+    <section class="shots" aria-label="Screens from the game">
+      <figure>
+        <img src="images/home.png" alt="Home screen with Today’s puzzle, Practice, a streak, and links to how to play, statistics, and settings.">
+        <figcaption>Home</figcaption>
+      </figure>
+      <figure>
+        <img src="images/board.png" alt="Today’s puzzle on 10 October 2026, with two tiles showing 2, score zero, undo, and three hints.">
+        <figcaption>Today’s puzzle</figcaption>
+      </figure>
+      <figure>
+        <img src="images/settings.png" alt="Settings for theme, sound, haptics, reduced motion, privacy, and reset.">
+        <figcaption>Settings</figcaption>
+      </figure>
+    </section>
+
+    <section id="play">
+      <h2>How a move works</h2>
+      <p>Swipe left, right, up, or down. Every tile travels that way. Two equal numbers that meet become their sum, and that new number is added to the score. Each tile joins at most once in a swipe, so a fresh number does not keep combining in the same move.</p>
+      <p>A new 2, or sometimes a 4, appears after a swipe that actually changes the board. A swipe that cannot move anything leaves the board alone.</p>
+      <p>The round ends when no direction can change the board. Reaching 2048 is the clear. You can keep playing after that.</p>
+    </section>
+
+    <section id="daily" class="split">
+      <div>
+        <h2>Today, then practice</h2>
+        <p>The daily board is chosen from the calendar date in your current time zone. It changes at local midnight. Playing it does not need a network, and finishing the same date twice does not add another streak day.</p>
+        <p>Practice starts a separate board. Its score and best score stay apart from the daily puzzle.</p>
+      </div>
+      <div>
+        <h2>Undo and hints</h2>
+        <p>Undo steps back one move. It does not give a spent hint back, and it does not rewind past the swipe that first reaches 2048.</p>
+        <p>A hint shows a strong direction and spends one charge. You start with three. A short ad can add one hint, or, once the board is stuck, clear the two smallest tiles. If the ad does not finish, the board stays as it is.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>On this phone</h2>
+      <p>Games, scores, streaks, and settings stay in the app. There is no Daily Mind account. Reset progress in Settings clears the saved games and leaves your sound, theme, and motion choices in place. Uninstalling removes the local data.</p>
+      <p>Sound, haptics, a dark theme, larger text, and reduced motion are all in Settings. The board can be read by a screen reader, cell by cell.</p>
+      <p>The game is for adults and is not directed at children.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Daily Mind Tiles for Android. Published by tarunguptaraja.</p>
+    <p><a href="privacy/">Privacy policy</a> · <a href="mailto:paperhour.studio@gmail.com">paperhour.studio@gmail.com</a></p>
+  </footer>
+</body>
+</html>
